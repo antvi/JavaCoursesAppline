@@ -23,7 +23,7 @@ public class Main {
         System.out.println("Сумма первого и последнего элемента в массиве = " + sumFirstAndAvgEl);
 
         //task4
-        int n = 3;
+       /* int n = 3;
         Scanner scanner = new Scanner(System.in);
         int masnum[] = new int[n];
         int i;
@@ -46,6 +46,41 @@ public class Main {
         System.out.println("AVGdevTwoAndRound = " + AVGdevTwoAndRound);
         if (AVGdevTwoAndRound > 3){
             System.out.println( "Программа выполнена корректно");
-        }
+        }*/
+
+        //task5
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Введите первое число:");
+        int num1 = scanner.nextInt();
+        System.out.println("Введите второе число:");
+        int num2 = scanner.nextInt();
+        System.out.println("Введите арифметическую операцию *,/,+,-:");
+        char action = scanner.next().charAt(0);
+
+        double result;
+
+        switch (action) {
+                case '/':
+                    result = num1 / num2;
+                    System.out.println("result = "+ result);
+                    break;
+                case '*':
+                    result = num1 * num2;
+                    System.out.println("result = "+ result);
+                    break;
+                case '-':
+                    result =  num1 - num2;
+                    System.out.println("result = "+ result);
+                    break;
+                case '+':
+                    result = num1 + num2;
+                    System.out.println("result = "+ result);
+                    break;
+            }
+
+
+
+
+
     }
 }
