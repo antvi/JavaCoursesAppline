@@ -49,7 +49,7 @@ public class Main {
         }*/
 
         //task5
-        Scanner scanner = new Scanner(System.in);
+    /*    Scanner scanner = new Scanner(System.in);
         System.out.println("Введите первое число:");
         int num1 = scanner.nextInt();
         System.out.println("Введите второе число:");
@@ -77,9 +77,107 @@ public class Main {
                     System.out.println("result = "+ result);
                     break;
             }
+            */
+     //task6
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Выберите что переводить: 1 - масса, 2 - расстояние:");
+        int what = scanner.nextInt();
+        System.out.println("Введите число");
+        int num = scanner.nextInt();
+
+        switch (what){
+            case 1:
+
+                System.out.println("Выберите единицу измерения масса: 1 - грамм, 2 - килограм, 3 - центнер, 4 - тонна:");
+                int meas1 = scanner.nextInt();
+
+                switch (meas1){
+                    case 1:
+                        System.out.println("грамм:" + num);
+                        double gramtoKg = num *  0.001;
+                        System.out.println("килограм:" + gramtoKg);
+                        double gramtoCent = num *  0.00001;
+                        System.out.println("центнер:" + gramtoCent);
+                        double gramtoTon = num *  0.000001;
+                        System.out.println("тонна:" + gramtoTon);
+                        break;
+                    case 2:
+                        System.out.println("килограм:" + num);
+                        double kgtogramm = num *  1000;
+                        System.out.println("грамм:" + kgtogramm);
+                        double kgtoCent = num *  0.01;
+                        System.out.println("центнер:" + kgtoCent);
+                        double kgtoTon = num *  0.001;
+                        System.out.println("тонна:" + kgtoTon);
+                        break;
+                    case 3:
+                        System.out.println("центнер:" + num);
+                        double centtogramm = num *  100000;
+                        System.out.println("грамм:" + centtogramm);
+                        double centtoKg = num *  100;
+                        System.out.println("килограм:" + centtoKg);
+                        double centtoTon = num *  0.1;
+                        System.out.println("тонна:" + centtoTon);
+                        break;
+                    case 4:
+                        System.out.println("тонна:" + num);
+                        double tontogramm = num *  1000000;
+                        System.out.println("грамм:" + tontogramm);
+                        double tontoKg = num *  1000;
+                        System.out.println("килограм:" + tontoKg);
+                        double tontocent = num *  10;
+                        System.out.println("центнер:" + tontocent);
+                        break;
+
+                }
+                break;
+            case 2:
+
+                System.out.println("Выберите единицу измерения расстояние: 1 - метр, 2 - миля, 3 - ярд, 4 - фут:");
+                int meas2= scanner.nextInt();
 
 
+                switch (meas2){
+                    case 1:
+                        System.out.println("Метры:" + num);
+                        double metrtoMile = num *  0.0006;
+                        System.out.println("Мили:" + metrtoMile);
+                        double metrtoYard = num *  1.093613;
+                        System.out.println("Ярды:" + metrtoYard);
+                        double metrtoFoot = num *  3.28084;
+                        System.out.println("Футы:" + metrtoFoot);
+                        break;
+                    case 2:
+                        System.out.println("Мили:" + num);
+                        double miletoMetr = num *  1609.3;
+                        System.out.println("Метры:" + miletoMetr);
+                        double miletoYard = num * 1760;
+                        System.out.println("Ярды:" + miletoYard);
+                        double miletoFoot = num *  5280;
+                        System.out.println("Футы:" + miletoFoot);
+                        break;
+                    case 3:
+                        System.out.println("Ярды:" + num);
+                        double yardtoMetr = num *  0.9144;
+                        System.out.println("Метры:" + yardtoMetr);
+                        double yardtoMile = num * 0.00057;
+                        System.out.println("Мили:" + yardtoMile);
+                        double yardtoFoot = num *  3;
+                        System.out.println("Футы:" + yardtoFoot);
+                        break;
+                    case 4:
+                        System.out.println("Футы:" + num);
+                        double foottoMetr = num *  0.3048;
+                        System.out.println("Метры:" + foottoMetr);
+                        double foottoMile = num * 0.000189;
+                        System.out.println("Мили:" + foottoMile);
+                        double foottoYard = num * 0.333;
+                        System.out.println("Ярды:" + foottoYard);
+                        break;
+                }
 
+        }
 
 
     }
