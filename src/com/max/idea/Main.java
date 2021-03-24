@@ -15,6 +15,7 @@ public class Main {
         System.out.println(Arrays.deepToString(new int[][]{arrofint}));
 
         int sumFirstAndAvgEl = arrofint[0] + arrofint[arrofint.length/2];
-        System.out.println(sumFirstAndAvgEl);
+        System.out.println("Сумма первого и последнего элемента в массиве = " + sumFirstAndAvgEl);
+
     }
 }
