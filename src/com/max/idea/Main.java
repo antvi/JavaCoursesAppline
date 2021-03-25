@@ -180,7 +180,7 @@ public class Main {
         }*/
 
         //task7
-        Scanner scanner = new Scanner(System.in);
+   /*     Scanner scanner = new Scanner(System.in);
         System.out.println("Введите размерность массива;");
         int n = scanner.nextInt();
 
@@ -210,11 +210,26 @@ public class Main {
                     System.out.println("Данное значение имеется в константах " + z);
 break;
                 }
-            }
+            }*/
+
+        //task8
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Введите любое целое положительное число:");
+        int n = scanner.nextInt();
+        int array[] = new int[n];
 
 
-
-
+        for (int i = 0; i < n; i++) {
+            array[i] = i;
         }
+        System.out.println(Arrays.deepToString(new int[][]{array}));
+
+        int sum = 0;
+        for (int j = 0; j < array.length/2; j++) {
+            sum = sum + array[2 * j + 1];
+        }
+
+        System.out.println("Сумма нечетных чисел массива = " + sum);
     }
+}
 
