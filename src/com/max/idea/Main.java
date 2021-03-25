@@ -285,9 +285,13 @@ break;
 
         System.out.println("Вывод первой строки матрицы на экран, где каждый элемент умножается на 3:");
         for (int i = 0; i < k; i++) {
-            matrix[0][i] = matrix[0][i] * 3;
-            System.out.print(matrix[0][i] + " ");
+            for (int j = 0; j < 1; j++) {
+                matrix[j][i] = matrix[j][i] * 3;
+                System.out.print(matrix[j][i] + " ");
+
+            }
         }
+
 
     }
 }
