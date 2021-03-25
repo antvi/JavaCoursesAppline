@@ -7,13 +7,13 @@ public class Main {
 
     public static void main(String[] args) {
         //task 1
-        System.out.println("Hello world!");
+        /*     System.out.println("Hello world!");*/
         //task 2
-        double b = 3.1416;
-        byte с = 127;
+     /*   double b = 3.1416;
+        byte с = 127;*/
 
         //task 3
-        int[] arrofint = {0, 1, 2, 3, 4};
+    /*    int[] arrofint = {0, 1, 2, 3, 4};
         int temp = arrofint[0];
         arrofint[0] = arrofint[arrofint.length - 1];
         arrofint[arrofint.length - 1] = temp;
@@ -21,7 +21,7 @@ public class Main {
 
         int sumFirstAndAvgEl = arrofint[0] + arrofint[arrofint.length / 2];
         System.out.println("Сумма первого и последнего элемента в массиве = " + sumFirstAndAvgEl);
-
+*/
         //task4
        /* int n = 3;
         Scanner scanner = new Scanner(System.in);
@@ -78,9 +78,9 @@ public class Main {
                     break;
             }
             */
-     //task6
+        //task6
 
-        Scanner scanner = new Scanner(System.in);
+     /*   Scanner scanner = new Scanner(System.in);
         System.out.println("Выберите что переводить: 1 - масса, 2 - расстояние:");
         int what = scanner.nextInt();
         System.out.println("Введите число");
@@ -177,8 +177,44 @@ public class Main {
                         break;
                 }
 
+        }*/
+
+        //task7
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Введите размерность массива;");
+        int n = scanner.nextInt();
+
+        int array[] = new int[n];
+        int i;
+        int x = 2;
+        int y = 5;
+        int z = 9;
+
+        System.out.println("Введите числа в массиве:");
+        for (i = 0; i < n; i++) {
+            array[i] = scanner.nextInt();
+            System.out.println("Вы ввели: " + array[i]);
         }
+        System.out.println(Arrays.deepToString(new int[][]{array}));
+
+        for ( int j=0; j<array.length; j++) {
+            if ((x == array[j])) {
+                System.out.println("Данное значение имеется в константах " + x);
+                break;
+            }
+            if ((y == array[j])) {
+                System.out.println("Данное значение имеется в константах " + y);
+                break;
+            }
+                if ((z == array[j])) {
+                    System.out.println("Данное значение имеется в константах " + z);
+break;
+                }
+            }
 
 
+
+
+        }
     }
-}
+
