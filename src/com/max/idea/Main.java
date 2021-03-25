@@ -213,7 +213,7 @@ break;
             }*/
 
         //task8
-        Scanner scanner = new Scanner(System.in);
+      /*  Scanner scanner = new Scanner(System.in);
         System.out.println("Введите любое целое положительное число:");
         int n = scanner.nextInt();
         int array[] = new int[n];
@@ -229,7 +229,34 @@ break;
             sum = sum + array[2 * j + 1];
         }
 
-        System.out.println("Сумма нечетных чисел массива = " + sum);
+        System.out.println("Сумма нечетных чисел массива = " + sum);*/
+
+        //task9
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Введите размерность массива:");
+        int n = scanner.nextInt();
+        double array[] = new double[n];
+        System.out.println("Введите числа массива (число с плавающей точкой указывать через ','):");
+        for (int i=0; i<n; i++){
+            array[i] = scanner.nextDouble();
+        }
+        System.out.println(Arrays.deepToString(new double[][]{array}));
+
+        double summas = 0;
+        double arisum=0;
+
+        for(int j =0; j<n; j++){
+            summas =summas + array[j];
+        }
+
+        arisum = summas/2;
+
+        for (int k=0;k<n;k++){
+            array[k] = array[k]*arisum;
+        }
+
+        System.out.println("Массив умноженный на среднее арифметическое массива " + Arrays.deepToString(new double[][]{array}));
+
     }
 }
 
