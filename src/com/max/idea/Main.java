@@ -1,6 +1,5 @@
 package com.max.idea;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
@@ -232,7 +231,7 @@ break;
         System.out.println("Сумма нечетных чисел массива = " + sum);*/
 
         //task9
-        Scanner scanner = new Scanner(System.in);
+      /*  Scanner scanner = new Scanner(System.in);
         System.out.println("Введите размерность массива:");
         int n = scanner.nextInt();
         double array[] = new double[n];
@@ -256,6 +255,39 @@ break;
         }
 
         System.out.println("Массив умноженный на среднее арифметическое массива " + Arrays.deepToString(new double[][]{array}));
+*/
+
+        //task 10
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Введите размерость матрицы n ,k:");
+        int n = scanner.nextInt();
+        int k = scanner.nextInt();
+
+        System.out.println("Введите элементы матрицы:");
+
+        int matrix[][] = new int[n][k];
+
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < k; j++) {
+                matrix[i][j] = scanner.nextInt();
+            }
+        }
+
+        System.out.println("Введенная матрица:");
+
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < k; j++) {
+                System.out.print(matrix[i][j] + " ");
+
+            }
+            System.out.println();
+        }
+
+        System.out.println("Вывод первой строки матрицы на экран, где каждый элемент умножается на 3:");
+        for (int i = 0; i < k; i++) {
+            matrix[0][i] = matrix[0][i] * 3;
+            System.out.print(matrix[0][i] + " ");
+        }
 
     }
 }
