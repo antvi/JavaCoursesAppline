@@ -258,7 +258,7 @@ break;
 */
 
         //task 10
-        Scanner scanner = new Scanner(System.in);
+     /*   Scanner scanner = new Scanner(System.in);
         System.out.println("Введите размерость матрицы n ,k:");
         int n = scanner.nextInt();
         int k = scanner.nextInt();
@@ -290,6 +290,32 @@ break;
                 System.out.print(matrix[j][i] + " ");
 
             }
+        }*/
+
+        //task 11
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Введите первое число в строковую переменную");
+        String str = scanner.next();
+        System.out.println("Введите второе число в целочисленную переменную");
+        int k = scanner.nextInt();
+
+        Integer s = Integer.parseInt(str);
+
+        if (k > s) {
+            System.out.println("Большее число: " + k);
+
+        } else {
+            System.out.println("Большее число: " + s);
+        }
+
+        double k1 = k;
+        double s1 = s;
+
+        if (k1 < s1) {
+            System.out.println("Меньшее число: " + k1);
+
+        } else {
+            System.out.println("Меньшее число: " + s1);
         }
 
 
