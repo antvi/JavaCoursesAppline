@@ -293,7 +293,7 @@ break;
         }*/
 
         //task 11
-        Scanner scanner = new Scanner(System.in);
+    /*    Scanner scanner = new Scanner(System.in);
         System.out.println("Введите первое число в строковую переменную");
         String str = scanner.next();
         System.out.println("Введите второе число в целочисленную переменную");
@@ -316,7 +316,32 @@ break;
 
         } else {
             System.out.println("Меньшее число: " + s1);
+        }*/
+
+
+        //task12
+
+        String java = "I like Java!!!";
+
+        boolean result1 = java.contains("Java");
+        System.out.println("Java is " + result1);
+
+        boolean result2 = java.startsWith("I like");
+        System.out.println("I like " + result2);
+
+        boolean result3 = java.endsWith("!!!");
+        System.out.println("!!! is " + result3);
+
+        if (result1 == result2 == result3){
+            String javaUpStr = java.toUpperCase();
+            System.out.println(javaUpStr);
         }
+
+        String totalRes = java.replaceAll("a", "o");
+        System.out.println(totalRes);
+
+        String totalRes2 = java.substring(7,11).replaceAll("a","o");
+        System.out.println(totalRes2);
 
 
     }
