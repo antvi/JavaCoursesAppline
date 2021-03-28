@@ -321,7 +321,7 @@ break;
 
         //task12
 
-        String java = "I like Java!!!";
+        /*String java = "I like Java!!!";
 
         boolean result1 = java.contains("Java");
         System.out.println("Java is " + result1);
@@ -341,9 +341,31 @@ break;
         System.out.println(totalRes);
 
         String totalRes2 = java.substring(7,11).replaceAll("a","o");
-        System.out.println(totalRes2);
+        System.out.println(totalRes2);*/
 
+        //task13
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Введите 'I love java 8 Я люблю java 14 core1'");
+        String str = scanner.nextLine();
+//        String str = "i love java 8 Я люблю java 14 core1 ";
+        System.out.println(str);
+
+        String[] words = str.split(" ");
+        Integer count = 0;
+        for (String word : words) {
+            boolean onlyLatinAlphabet = word.matches("^[a-zA-Z]+$");
+            if (onlyLatinAlphabet){
+                System.out.print(word + " ");
+                count++;
+            }
+        }
+        System.out.println("Количество латинских слов :" + count);
+
+
+
+
+        }
 
     }
-}
+
 
