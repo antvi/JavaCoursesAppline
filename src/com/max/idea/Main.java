@@ -1,7 +1,5 @@
 package com.max.idea;
 
-import java.util.Scanner;
-
 public class Main {
 
     public static void main(String[] args) {
@@ -344,7 +342,7 @@ break;
         System.out.println(totalRes2);*/
 
         //task13
-        Scanner scanner = new Scanner(System.in);
+    /*    Scanner scanner = new Scanner(System.in);
         System.out.println("Введите 'I love java 8 Я люблю java 14 core1'");
         String str = scanner.nextLine();
 //        String str = "i love java 8 Я люблю java 14 core1 ";
@@ -359,13 +357,45 @@ break;
                 count++;
             }
         }
-        System.out.println("Количество латинских слов :" + count);
+        System.out.println("Количество латинских слов :" + count);*/
 
+        //task14
 
-
-
+        int array[] = new int[15];
+        for (int i = 0; i < array.length; i++) {
+            array[i] = (int) Math.round((Math.random() * 30) - 15);
+            System.out.print(array[i] + " ");
         }
 
+
+        int max = 0;
+        int min = 0;
+
+        System.out.println();
+
+        for (int j = 0; j < array.length; j++) {
+            if (min > array[j]) {
+                min = array[j];
+            }
+            if (max < array[j]) {
+                max = array[j];
+            }
+        }
+        System.out.println("max = " + max + "  " + "min = " + min);
+
+
+        if (Math.abs(min) <= Math.abs(max)){
+            int abs = Math.abs(max);
+            System.out.println("Больший по модулю из max и min = " + max + " Модуль = " + abs );
+
+        } else {
+            int abs = Math.abs(min);
+            System.out.println("Больший по модулю из max и min = " + min + " Модуль = " + abs  );
+        }
+
+
     }
+
+}
 
 
