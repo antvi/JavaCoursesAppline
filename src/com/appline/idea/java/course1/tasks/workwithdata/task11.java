@@ -1,4 +1,4 @@
-package com.appline.idea.java.courses.tasks.workwithdata;
+package com.appline.idea.java.course1.tasks.workwithdata;
 
 import java.util.Scanner;
 

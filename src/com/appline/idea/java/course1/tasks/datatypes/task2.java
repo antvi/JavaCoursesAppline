@@ -1,4 +1,4 @@
-package com.appline.idea.java.courses.tasks.datatypes;
+package com.appline.idea.java.course1.tasks.datatypes;
 
 /**
  * Задача №2 - Типы данных

@@ -1,4 +1,4 @@
-package com.appline.idea.java.courses.tasks.cycles;
+package com.appline.idea.java.course1.tasks.cycles;
 
 import java.util.Scanner;
 

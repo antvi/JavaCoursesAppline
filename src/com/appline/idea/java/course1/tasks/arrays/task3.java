@@ -1,4 +1,4 @@
-package com.appline.idea.java.courses.tasks.arrays;
+package com.appline.idea.java.course1.tasks.arrays;
 
 import java.util.Arrays;
 

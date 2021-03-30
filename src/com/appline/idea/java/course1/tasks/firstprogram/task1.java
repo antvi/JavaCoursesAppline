@@ -1,4 +1,4 @@
-package com.appline.idea.java.courses.tasks.firstprogram;
+package com.appline.idea.java.course1.tasks.firstprogram;
 
 /**
  * Задача №1 - Первая программа

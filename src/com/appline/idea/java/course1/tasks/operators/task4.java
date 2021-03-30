@@ -1,4 +1,4 @@
-package com.appline.idea.java.courses.tasks.operators;
+package com.appline.idea.java.course1.tasks.operators;
 
 import java.util.Arrays;
 import java.util.Scanner;

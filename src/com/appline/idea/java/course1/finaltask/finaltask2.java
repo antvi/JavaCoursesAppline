@@ -1,4 +1,4 @@
-package com.appline.idea.java.courses.finaltask;
+package com.appline.idea.java.course1.finaltask;
 
 import java.util.Scanner;
 
