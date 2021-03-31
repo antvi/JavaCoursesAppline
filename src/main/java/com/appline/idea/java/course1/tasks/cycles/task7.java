@@ -23,9 +23,9 @@ public class task7 {
 
         int array[] = new int[n];
         int i;
-        int x = 2;
-        int y = 5;
-        int z = 9;
+        final int x = 2;
+        final int y = 5;
+        final int z = 9;
 
         System.out.println("Введите числа в массиве:");
         for (i = 0; i < n; i++) {
