@@ -20,7 +20,7 @@ public class Task3 {
         arrofint[0] = arrofint[arrofint.length - 1];
         arrofint[arrofint.length - 1] = temp;
        // System.out.println(Arrays.deepToString(new int[][]{arrofint}));
-        System.out.println(Arrays.toString(new int[][]{arrofint}));
+        System.out.println(Arrays.toString(arrofint));
 
         int sumFirstAndAvgEl = arrofint[0] + arrofint[arrofint.length / 2];
         System.out.println("Сумма первого и среднего элемента в массиве = " + sumFirstAndAvgEl);
