@@ -12,7 +12,7 @@ package com.appline.idea.java.course1.tasks.firstprogram;
  * Подключиться к GitHub, залить программу в созданный репозиторий.
  */
 
-public class task1 {
+public class Task1 {
     public static void main(String[] args) {
         System.out.println("Hello world!");
     }
