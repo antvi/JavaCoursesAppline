@@ -21,26 +21,30 @@ public class task5 {
         System.out.println("Введите арифметическую операцию *,/,+,-:");
         char action = scanner.next().charAt(0);
 
-        double result;
+        double result = 0;
 
         switch (action) {
+            default:
+                System.out.println("Недопустимая арифметическая операция");
+                break;
             case '/':
                 result = num1 / num2;
-                System.out.println("result = " + result);
+               // System.out.println("result = " + result);
                 break;
             case '*':
                 result = num1 * num2;
-                System.out.println("result = " + result);
+              //  System.out.println("result = " + result);
                 break;
             case '-':
                 result = num1 - num2;
-                System.out.println("result = " + result);
+              //  System.out.println("result = " + result);
                 break;
             case '+':
                 result = num1 + num2;
-                System.out.println("result = " + result);
+               // System.out.println("result = " + result);
                 break;
         }
+        System.out.println("result = " + result);
 
     }
 }
